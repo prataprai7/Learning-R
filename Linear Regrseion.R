@@ -11,3 +11,19 @@ R_squared = cor(y, y_hat)^2
 R_squared
 
 summary(model)
+
+
+
+# data.frame
+
+x= c(1000,2000,3000)
+y= c(100,200,300)
+
+model=lm(y~x)
+
+z=data.frame(x= 2500)
+
+z_hat= predict(model, z)
+z_hat
+
+summary(model)
